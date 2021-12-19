@@ -1,0 +1,23 @@
+/* Anytime we add any padding to our HTML element, it will strech the page 
+For instance, If we had a padding of 100% of viewport width, If we add a padding
+to something, it would make that more than 100% of the viewport width, & it would force a
+horizontal scroll bar. To avoid this we add box-sizing: border-box; to our HTML element
+such that it will not stretch the page & restric it inside the borders. */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* background: dodgerblue; */
+}
+
+
+/* vh -viewport Height, it is the height of the entire window
+Here it means that it always strech our background to the entire window height, 
+even if the content isn't taking up the entire window/screen height. 
+
+We can observe that our background is streched to take up the entire window height.
+*/
